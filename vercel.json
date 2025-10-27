@@ -3,6 +3,8 @@
     { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/style.css", "dest": "/style.css" },
+    { "src": "/gasgo.jpg", "dest": "/gasgo.jpg" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
