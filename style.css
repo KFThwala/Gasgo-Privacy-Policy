@@ -56,7 +56,7 @@ strong {
   color: #2c3e50;
 }
 
-/* Links (if needed) */
+/* Links */
 a {
   color: #3498db;
   text-decoration: none;
@@ -66,23 +66,94 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Favicon fix (optional) */
+/* Optional favicon fix */
 link[rel="icon"] {
   width: 32px;
   height: 32px;
 }
 
-/* Responsive adjustments */
+/* ============================= */
+/* RESPONSIVE DESIGN BREAKPOINTS */
+/* ============================= */
+
+/* Medium screens (tablets, small laptops) */
+@media (max-width: 900px) {
+  body {
+    padding: 30px 20px;
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p, ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small screens (phones, under 600px) */
 @media (max-width: 600px) {
   body {
     padding: 20px 15px;
   }
-  
+
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  p, ul li {
+    font-size: 0.9rem;
+  }
+
+  ul {
+    padding-left: 15px;
+  }
+}
+
+/* Very small screens (under 400px) */
+@media (max-width: 400px) {
+  body {
+    padding: 15px 10px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p, ul li {
+    font-size: 0.85rem;
+  }
+}
+
+/* Large screens (over 1200px) */
+@media (min-width: 1200px) {
+  body {
+    max-width: 1100px;
+  }
+
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.05rem;
   }
 }
