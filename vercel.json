@@ -1,6 +1,8 @@
 {
   "builds": [
-    { "src": "index.html", "use": "@vercel/static" }
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "style.css", "use": "@vercel/static" },
+    { "src": "gasgo.jpg", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/style.css", "dest": "/style.css" },
